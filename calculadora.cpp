@@ -27,10 +27,21 @@ int main() {
     printf("18. Área do círculo\n");
     printf("19. Área do retângulo\n");
     printf("20. Hipotenusa\n");
+    printf("21. Sair\n");
     printf("=================================\n");
+
+    while (1) {
 
     printf("Digite a opção: ");
     scanf("%d", &opcao);
+    if (opcao == 21) {
+        printf("Saindo da calculadora...\n");
+        return 0;
+    }
+    if (opcao < 1 || opcao > 21) {
+        printf("Opção inválida! Escolha uma opção de 1 a 21.\n");
+        continue;
+    }
 
     if (opcao == 1) {
 
@@ -262,8 +273,9 @@ int main() {
 
     } else {
 
-        printf("Opção inválida! Escolha uma opção de 1 a 20.\n");
+        printf("Opção inválida! Escolha uma opção de 1 a 21.\n");
 
+    }
     }
 
     return 0;
