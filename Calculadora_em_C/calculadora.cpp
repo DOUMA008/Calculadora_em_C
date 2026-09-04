@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
+constexpr float PI = 3.14159265358979323846f;
+
 int main() {
 
     int opcao;
@@ -132,7 +134,7 @@ int main() {
         printf("Digite o ângulo em graus: ");
         scanf("%f", &num1);
 
-        resultado = sin(num1 * M_PI / 180);
+        resultado = sin(num1 * PI / 180);
 
         printf("Seno: %.4f\n", resultado);
 
@@ -141,7 +143,7 @@ int main() {
         printf("Digite o ângulo em graus: ");
         scanf("%f", &num1);
 
-        resultado = cos(num1 * M_PI / 180);
+        resultado = cos(num1 * PI / 180);
 
         printf("Cosseno: %.4f\n", resultado);
 
@@ -150,7 +152,7 @@ int main() {
         printf("Digite o ângulo em graus: ");
         scanf("%f", &num1);
 
-        resultado = tan(num1 * M_PI / 180);
+        resultado = tan(num1 * PI / 180);
 
         printf("Tangente: %.4f\n", resultado);
 
@@ -216,7 +218,7 @@ int main() {
         printf("Digite o valor em graus: ");
         scanf("%f", &num1);
 
-        resultado = num1 * M_PI / 180;
+        resultado = num1 * PI / 180;
 
         printf("Radianos: %.4f\n", resultado);
 
@@ -225,7 +227,7 @@ int main() {
         printf("Digite o valor em radianos: ");
         scanf("%f", &num1);
 
-        resultado = num1 * 180 / M_PI;
+        resultado = num1 * 180 / PI;
 
         printf("Graus: %.4f\n", resultado);
 
@@ -235,7 +237,7 @@ int main() {
         scanf("%f", &num1);
 
         if (num1 >= 0) {
-            resultado = M_PI * num1 * num1;
+            resultado = PI * num1 * num1;
             printf("Área do círculo: %.2f\n", resultado);
         } else {
             printf("Erro: o raio não pode ser negativo.\n");
