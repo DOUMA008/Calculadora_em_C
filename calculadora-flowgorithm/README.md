@@ -98,16 +98,7 @@ Depois:
 4. Digitar os valores solicitados;
 5. Ver o resultado na tela.
 
-## Estrutura do projeto
 
-O projeto está organizado da seguinte forma:
-
-```text
-desenvolvimento-de-algoritmo-e-pensamento-computacional/
-└── calculadora-flowgorithm/
-    ├── calculadora.fprg
-    └── README.md
-```
 
 ## Conclusão
 
